@@ -5,3 +5,4 @@ vkr/bin/
 vkr/lib/
 vkrApplication/_comp/
 vkrApplication/_inter/
+vkrShaders/*.spv
