@@ -1,0 +1,6 @@
+For use Dynamic Link Library:
+	#define VKR_DLL
+	Use lib/vkr_x.lib for compilation
+	Use bin/vkr_x.dll for execution
+For use Static Library:
+	Use lib/vkr.lib for compilation
