@@ -25,7 +25,7 @@ namespace vkr
 		glfwTerminate();
 	}
 	
-	void window::closeWindow()
+	void Window::closeWindow()
 	{
 		if (!isActive) return;
 
@@ -42,7 +42,7 @@ namespace vkr
 		wmThread.unlock();
 	}
 
-	window::window(size_t _width, size_t _height, const char* _title)
+	Window::Window(size_t _width, size_t _height, const char* _title)
 	{
 		wmThread.lock();
 
@@ -60,12 +60,12 @@ namespace vkr
 		wmThread.unlock();
 	}
 	
-	window::~window()
+	Window::~Window()
 	{
 		closeWindow();
 	}
 	
-	bool window::isRunning()
+	bool Window::isRunning()
 	{
 		if (isActive)
 		{

@@ -4,7 +4,7 @@
 namespace vkr
 {
 
-	class VKR_API window
+	class VKR_API Window
 	{
 		void* GLFWwindow_ptr;
 		bool isActive{ false };
@@ -12,16 +12,16 @@ namespace vkr
 
 	public:
 		// BASE
-		window(size_t _width, size_t _height, const char* _title);
-		~window();
+		Window(size_t _width, size_t _height, const char* _title);
+		~Window();
 
 		// COPY
-		window(const window&) = delete;
-		window& operator=(const window&) = delete;
+		Window(const Window&) = delete;
+		Window& operator=(const Window&) = delete;
 
 		// MOVE
-		window(window&&) = default;
-		window& operator=(window&&) = default;
+		Window(Window&&) = default;
+		Window& operator=(Window&&) = default;
 
 		// FUNCTIONS
 		bool isRunning();
